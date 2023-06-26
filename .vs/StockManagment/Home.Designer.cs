@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.bunifuPictureBox12 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -85,6 +85,24 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1682, 108);
             this.panel2.TabIndex = 1;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(1601, 91);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(81, 17);
+            this.label14.TabIndex = 9;
+            this.label14.Text = "Version:1.0.0";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(1537, 72);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(145, 17);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "WertyLand Produciones";
             // 
             // label1
             // 
@@ -143,24 +161,6 @@
             this.panel1.Size = new System.Drawing.Size(257, 733);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(1537, 72);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(145, 17);
-            this.label13.TabIndex = 8;
-            this.label13.Text = "WertyLand Produciones";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(1601, 91);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(81, 17);
-            this.label14.TabIndex = 9;
-            this.label14.Text = "Version:1.0.0";
             // 
             // bunifuPictureBox12
             // 

@@ -54,3 +54,6 @@ C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\StockManagment\obj\Debug\Sto
 C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\StockManagment\obj\Debug\StockManagment.Empleados.resources
 C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\StockManagment\obj\Debug\StockManagment.Provedores.resources
 C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\StockManagment\obj\Debug\StockManagment.Facturas.resources
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\StockManagment\obj\Debug\StockManagment.Estadisticas.resources
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\StockManagment\obj\Debug\StockManagment.Transporte.resources
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\StockManagment\obj\Debug\StockManagment.Ventas.resources

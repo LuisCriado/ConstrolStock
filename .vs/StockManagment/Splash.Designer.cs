@@ -70,10 +70,9 @@
             this.bunifuCircleProgress2.SuperScriptMargin = new System.Windows.Forms.Padding(0);
             this.bunifuCircleProgress2.SuperScriptText = "";
             this.bunifuCircleProgress2.TabIndex = 16;
-            this.bunifuCircleProgress2.Text = "30";
+            this.bunifuCircleProgress2.Text = "0";
             this.bunifuCircleProgress2.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.bunifuCircleProgress2.Value = 30;
-            this.bunifuCircleProgress2.ValueByTransition = 30;
+            this.bunifuCircleProgress2.ValueByTransition = 0;
             this.bunifuCircleProgress2.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             // 
             // timer1
