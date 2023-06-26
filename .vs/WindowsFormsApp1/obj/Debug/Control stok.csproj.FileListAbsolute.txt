@@ -1,0 +1,15 @@
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\WindowsFormsApp1\obj\Debug\Control stok.csproj.AssemblyReference.cache
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\WindowsFormsApp1\obj\Debug\Control stok.csproj.SuggestedBindingRedirects.cache
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Inicio.resources
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Login.resources
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Stocks.resources
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\WindowsFormsApp1\obj\Debug\Control stok.csproj.GenerateResource.cache
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\WindowsFormsApp1\obj\Debug\Control stok.csproj.CoreCompileInputs.cache
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\WindowsFormsApp1\obj\Debug\Control stok.csproj.CopyComplete
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Home.resources
