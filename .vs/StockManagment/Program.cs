@@ -16,7 +16,7 @@ namespace StockManagment
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Direccion());
+            Application.Run(new Splash());
         }
     }
 }

@@ -154,5 +154,10 @@ namespace StockManagment
                 }
             }
         }
+
+        private void Stocks_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

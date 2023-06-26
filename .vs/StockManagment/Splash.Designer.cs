@@ -35,6 +35,8 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,12 +67,13 @@
             this.bunifuCircleProgress2.SubScriptMargin = new System.Windows.Forms.Padding(5, -20, 0, 0);
             this.bunifuCircleProgress2.SubScriptText = "";
             this.bunifuCircleProgress2.SuperScriptColor = System.Drawing.Color.Turquoise;
-            this.bunifuCircleProgress2.SuperScriptMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.bunifuCircleProgress2.SuperScriptMargin = new System.Windows.Forms.Padding(0);
             this.bunifuCircleProgress2.SuperScriptText = "";
             this.bunifuCircleProgress2.TabIndex = 16;
-            this.bunifuCircleProgress2.Text = "0";
+            this.bunifuCircleProgress2.Text = "30";
             this.bunifuCircleProgress2.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.bunifuCircleProgress2.ValueByTransition = 0;
+            this.bunifuCircleProgress2.Value = 30;
+            this.bunifuCircleProgress2.ValueByTransition = 30;
             this.bunifuCircleProgress2.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             // 
             // timer1
@@ -110,9 +113,29 @@
             this.label1.Text = "Cargando";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(606, 420);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(69, 13);
+            this.label14.TabIndex = 20;
+            this.label14.Text = "Version:1.0.0";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(554, -2);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(121, 13);
+            this.label13.TabIndex = 19;
+            this.label13.Text = "WertyLand Produciones";
+            // 
             // Splash
             // 
             this.ClientSize = new System.Drawing.Size(677, 433);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bunifuCircleProgress2);
             this.Controls.Add(this.bunifuPictureBox1);
@@ -133,5 +156,7 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
     }
 }

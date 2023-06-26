@@ -53,6 +53,20 @@
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.SupCb = new System.Windows.Forms.ComboBox();
+            this.PrDate = new Bunifu.UI.WinForms.BunifuDatePicker();
+            this.CatCb = new System.Windows.Forms.ComboBox();
+            this.SpriceTb = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.BpriceTb = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.QtyTb = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.PrNameTb = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.ProductDGV = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.SaveBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.EditBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.DeletBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.bunifuPictureBox12 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -75,21 +89,10 @@
             this.bunifuPictureBox3 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.SupCb = new System.Windows.Forms.ComboBox();
-            this.PrDate = new Bunifu.UI.WinForms.BunifuDatePicker();
-            this.CatCb = new System.Windows.Forms.ComboBox();
-            this.SpriceTb = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.BpriceTb = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.QtyTb = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.PrNameTb = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.ProductDGV = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.SaveBtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.EditBtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.DeletBtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox10)).BeginInit();
@@ -101,18 +104,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProductDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Turquoise;
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.bunifuPictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1682, 107);
+            this.panel1.Size = new System.Drawing.Size(1682, 108);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -133,7 +137,7 @@
             this.bunifuPictureBox1.BorderRadius = 0;
             this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
             this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(47, 12);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(12, 14);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(88, 88);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -167,307 +171,10 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.bunifuPictureBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 107);
+            this.panel2.Location = new System.Drawing.Point(0, 108);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(260, 734);
+            this.panel2.Size = new System.Drawing.Size(257, 733);
             this.panel2.TabIndex = 1;
-            // 
-            // bunifuPictureBox12
-            // 
-            this.bunifuPictureBox12.AllowFocused = false;
-            this.bunifuPictureBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox12.AutoSizeHeight = true;
-            this.bunifuPictureBox12.BorderRadius = 0;
-            this.bunifuPictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox12.Image")));
-            this.bunifuPictureBox12.IsCircle = true;
-            this.bunifuPictureBox12.Location = new System.Drawing.Point(21, 664);
-            this.bunifuPictureBox12.Name = "bunifuPictureBox12";
-            this.bunifuPictureBox12.Size = new System.Drawing.Size(52, 52);
-            this.bunifuPictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox12.TabIndex = 46;
-            this.bunifuPictureBox12.TabStop = false;
-            this.bunifuPictureBox12.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(87, 664);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(102, 37);
-            this.label12.TabIndex = 45;
-            this.label12.Text = "Logout";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(87, 605);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(152, 37);
-            this.label11.TabIndex = 44;
-            this.label11.Text = "Estadisticas";
-            // 
-            // bunifuPictureBox11
-            // 
-            this.bunifuPictureBox11.AllowFocused = false;
-            this.bunifuPictureBox11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox11.AutoSizeHeight = true;
-            this.bunifuPictureBox11.BorderRadius = 0;
-            this.bunifuPictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox11.Image")));
-            this.bunifuPictureBox11.IsCircle = true;
-            this.bunifuPictureBox11.Location = new System.Drawing.Point(23, 590);
-            this.bunifuPictureBox11.Name = "bunifuPictureBox11";
-            this.bunifuPictureBox11.Size = new System.Drawing.Size(52, 52);
-            this.bunifuPictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox11.TabIndex = 43;
-            this.bunifuPictureBox11.TabStop = false;
-            this.bunifuPictureBox11.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(81, 538);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(142, 37);
-            this.label10.TabIndex = 42;
-            this.label10.Text = "Transporte";
-            // 
-            // bunifuPictureBox10
-            // 
-            this.bunifuPictureBox10.AllowFocused = false;
-            this.bunifuPictureBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox10.AutoSizeHeight = true;
-            this.bunifuPictureBox10.BorderRadius = 0;
-            this.bunifuPictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox10.Image")));
-            this.bunifuPictureBox10.IsCircle = true;
-            this.bunifuPictureBox10.Location = new System.Drawing.Point(23, 523);
-            this.bunifuPictureBox10.Name = "bunifuPictureBox10";
-            this.bunifuPictureBox10.Size = new System.Drawing.Size(52, 52);
-            this.bunifuPictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox10.TabIndex = 41;
-            this.bunifuPictureBox10.TabStop = false;
-            this.bunifuPictureBox10.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(81, 476);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(95, 37);
-            this.label9.TabIndex = 40;
-            this.label9.Text = "Ventas";
-            // 
-            // bunifuPictureBox9
-            // 
-            this.bunifuPictureBox9.AllowFocused = false;
-            this.bunifuPictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox9.AutoSizeHeight = true;
-            this.bunifuPictureBox9.BorderRadius = 0;
-            this.bunifuPictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox9.Image")));
-            this.bunifuPictureBox9.IsCircle = true;
-            this.bunifuPictureBox9.Location = new System.Drawing.Point(21, 461);
-            this.bunifuPictureBox9.Name = "bunifuPictureBox9";
-            this.bunifuPictureBox9.Size = new System.Drawing.Size(52, 52);
-            this.bunifuPictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox9.TabIndex = 39;
-            this.bunifuPictureBox9.TabStop = false;
-            this.bunifuPictureBox9.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(79, 415);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(111, 37);
-            this.label8.TabIndex = 38;
-            this.label8.Text = "Pedidos";
-            // 
-            // bunifuPictureBox8
-            // 
-            this.bunifuPictureBox8.AllowFocused = false;
-            this.bunifuPictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox8.AutoSizeHeight = true;
-            this.bunifuPictureBox8.BorderRadius = 0;
-            this.bunifuPictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox8.Image")));
-            this.bunifuPictureBox8.IsCircle = true;
-            this.bunifuPictureBox8.Location = new System.Drawing.Point(21, 400);
-            this.bunifuPictureBox8.Name = "bunifuPictureBox8";
-            this.bunifuPictureBox8.Size = new System.Drawing.Size(52, 52);
-            this.bunifuPictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox8.TabIndex = 37;
-            this.bunifuPictureBox8.TabStop = false;
-            this.bunifuPictureBox8.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(79, 344);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(113, 37);
-            this.label7.TabIndex = 36;
-            this.label7.Text = "Facturas";
-            // 
-            // bunifuPictureBox7
-            // 
-            this.bunifuPictureBox7.AllowFocused = false;
-            this.bunifuPictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox7.AutoSizeHeight = true;
-            this.bunifuPictureBox7.BorderRadius = 0;
-            this.bunifuPictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox7.Image")));
-            this.bunifuPictureBox7.IsCircle = true;
-            this.bunifuPictureBox7.Location = new System.Drawing.Point(21, 329);
-            this.bunifuPictureBox7.Name = "bunifuPictureBox7";
-            this.bunifuPictureBox7.Size = new System.Drawing.Size(52, 52);
-            this.bunifuPictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox7.TabIndex = 35;
-            this.bunifuPictureBox7.TabStop = false;
-            this.bunifuPictureBox7.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(79, 286);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 37);
-            this.label6.TabIndex = 34;
-            this.label6.Text = "Stock";
-            // 
-            // bunifuPictureBox6
-            // 
-            this.bunifuPictureBox6.AllowFocused = false;
-            this.bunifuPictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox6.AutoSizeHeight = true;
-            this.bunifuPictureBox6.BorderRadius = 0;
-            this.bunifuPictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox6.Image")));
-            this.bunifuPictureBox6.IsCircle = true;
-            this.bunifuPictureBox6.Location = new System.Drawing.Point(21, 271);
-            this.bunifuPictureBox6.Name = "bunifuPictureBox6";
-            this.bunifuPictureBox6.Size = new System.Drawing.Size(52, 52);
-            this.bunifuPictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox6.TabIndex = 33;
-            this.bunifuPictureBox6.TabStop = false;
-            this.bunifuPictureBox6.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(79, 216);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(150, 37);
-            this.label5.TabIndex = 32;
-            this.label5.Text = "Provedores";
-            // 
-            // bunifuPictureBox5
-            // 
-            this.bunifuPictureBox5.AllowFocused = false;
-            this.bunifuPictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox5.AutoSizeHeight = true;
-            this.bunifuPictureBox5.BorderRadius = 0;
-            this.bunifuPictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox5.Image")));
-            this.bunifuPictureBox5.IsCircle = true;
-            this.bunifuPictureBox5.Location = new System.Drawing.Point(21, 201);
-            this.bunifuPictureBox5.Name = "bunifuPictureBox5";
-            this.bunifuPictureBox5.Size = new System.Drawing.Size(52, 52);
-            this.bunifuPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox5.TabIndex = 31;
-            this.bunifuPictureBox5.TabStop = false;
-            this.bunifuPictureBox5.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(79, 149);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(148, 37);
-            this.label4.TabIndex = 30;
-            this.label4.Text = "Empleados";
-            // 
-            // bunifuPictureBox4
-            // 
-            this.bunifuPictureBox4.AllowFocused = false;
-            this.bunifuPictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox4.AutoSizeHeight = true;
-            this.bunifuPictureBox4.BorderRadius = 0;
-            this.bunifuPictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox4.Image")));
-            this.bunifuPictureBox4.IsCircle = true;
-            this.bunifuPictureBox4.Location = new System.Drawing.Point(21, 134);
-            this.bunifuPictureBox4.Name = "bunifuPictureBox4";
-            this.bunifuPictureBox4.Size = new System.Drawing.Size(52, 52);
-            this.bunifuPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox4.TabIndex = 29;
-            this.bunifuPictureBox4.TabStop = false;
-            this.bunifuPictureBox4.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(79, 91);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(144, 37);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "Categorias";
-            // 
-            // bunifuPictureBox3
-            // 
-            this.bunifuPictureBox3.AllowFocused = false;
-            this.bunifuPictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox3.AutoSizeHeight = true;
-            this.bunifuPictureBox3.BorderRadius = 0;
-            this.bunifuPictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox3.Image")));
-            this.bunifuPictureBox3.IsCircle = true;
-            this.bunifuPictureBox3.Location = new System.Drawing.Point(21, 76);
-            this.bunifuPictureBox3.Name = "bunifuPictureBox3";
-            this.bunifuPictureBox3.Size = new System.Drawing.Size(52, 52);
-            this.bunifuPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox3.TabIndex = 27;
-            this.bunifuPictureBox3.TabStop = false;
-            this.bunifuPictureBox3.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(79, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 37);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Home";
-            // 
-            // bunifuPictureBox2
-            // 
-            this.bunifuPictureBox2.AllowFocused = false;
-            this.bunifuPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox2.AutoSizeHeight = true;
-            this.bunifuPictureBox2.BorderRadius = 0;
-            this.bunifuPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox2.Image")));
-            this.bunifuPictureBox2.IsCircle = true;
-            this.bunifuPictureBox2.Location = new System.Drawing.Point(21, 19);
-            this.bunifuPictureBox2.Name = "bunifuPictureBox2";
-            this.bunifuPictureBox2.Size = new System.Drawing.Size(42, 42);
-            this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox2.TabIndex = 26;
-            this.bunifuPictureBox2.TabStop = false;
-            this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
             // 
             // SupCb
             // 
@@ -479,7 +186,7 @@
             "NP",
             "Alcholes",
             "Propato"});
-            this.SupCb.Location = new System.Drawing.Point(1411, 139);
+            this.SupCb.Location = new System.Drawing.Point(1386, 114);
             this.SupCb.Name = "SupCb";
             this.SupCb.Size = new System.Drawing.Size(163, 38);
             this.SupCb.TabIndex = 18;
@@ -504,7 +211,7 @@
             this.PrDate.IconColor = System.Drawing.Color.Gray;
             this.PrDate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.PrDate.LeftTextMargin = 5;
-            this.PrDate.Location = new System.Drawing.Point(1133, 146);
+            this.PrDate.Location = new System.Drawing.Point(1108, 121);
             this.PrDate.MinimumSize = new System.Drawing.Size(4, 32);
             this.PrDate.Name = "PrDate";
             this.PrDate.Size = new System.Drawing.Size(230, 32);
@@ -529,7 +236,7 @@
             "Cofias",
             "Barbijos",
             "Bolsas De residuo"});
-            this.CatCb.Location = new System.Drawing.Point(481, 140);
+            this.CatCb.Location = new System.Drawing.Point(456, 115);
             this.CatCb.Name = "CatCb";
             this.CatCb.Size = new System.Drawing.Size(163, 38);
             this.CatCb.TabIndex = 16;
@@ -564,7 +271,7 @@
             this.SpriceTb.IconRight = null;
             this.SpriceTb.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.SpriceTb.Lines = new string[0];
-            this.SpriceTb.Location = new System.Drawing.Point(1005, 139);
+            this.SpriceTb.Location = new System.Drawing.Point(980, 114);
             this.SpriceTb.MaxLength = 32767;
             this.SpriceTb.MinimumSize = new System.Drawing.Size(1, 1);
             this.SpriceTb.Modified = false;
@@ -641,7 +348,7 @@
             this.BpriceTb.IconRight = null;
             this.BpriceTb.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.BpriceTb.Lines = new string[0];
-            this.BpriceTb.Location = new System.Drawing.Point(839, 139);
+            this.BpriceTb.Location = new System.Drawing.Point(814, 114);
             this.BpriceTb.MaxLength = 32767;
             this.BpriceTb.MinimumSize = new System.Drawing.Size(1, 1);
             this.BpriceTb.Modified = false;
@@ -718,7 +425,7 @@
             this.QtyTb.IconRight = null;
             this.QtyTb.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.QtyTb.Lines = new string[0];
-            this.QtyTb.Location = new System.Drawing.Point(681, 139);
+            this.QtyTb.Location = new System.Drawing.Point(656, 114);
             this.QtyTb.MaxLength = 32767;
             this.QtyTb.MinimumSize = new System.Drawing.Size(1, 1);
             this.QtyTb.Modified = false;
@@ -794,7 +501,7 @@
             this.PrNameTb.IconRight = null;
             this.PrNameTb.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.PrNameTb.Lines = new string[0];
-            this.PrNameTb.Location = new System.Drawing.Point(288, 139);
+            this.PrNameTb.Location = new System.Drawing.Point(263, 114);
             this.PrNameTb.MaxLength = 32767;
             this.PrNameTb.MinimumSize = new System.Drawing.Size(1, 1);
             this.PrNameTb.Modified = false;
@@ -920,7 +627,7 @@
             this.SaveBtn.IdleFillColor = System.Drawing.Color.White;
             this.SaveBtn.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.SaveBtn.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.SaveBtn.Location = new System.Drawing.Point(599, 207);
+            this.SaveBtn.Location = new System.Drawing.Point(574, 182);
             this.SaveBtn.Margin = new System.Windows.Forms.Padding(5);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(212, 52);
@@ -946,7 +653,7 @@
             this.EditBtn.IdleFillColor = System.Drawing.Color.White;
             this.EditBtn.IdleForecolor = System.Drawing.Color.Orange;
             this.EditBtn.IdleLineColor = System.Drawing.Color.Orange;
-            this.EditBtn.Location = new System.Drawing.Point(857, 207);
+            this.EditBtn.Location = new System.Drawing.Point(832, 182);
             this.EditBtn.Margin = new System.Windows.Forms.Padding(5);
             this.EditBtn.Name = "EditBtn";
             this.EditBtn.Size = new System.Drawing.Size(212, 52);
@@ -972,7 +679,7 @@
             this.DeletBtn.IdleFillColor = System.Drawing.Color.White;
             this.DeletBtn.IdleForecolor = System.Drawing.Color.Red;
             this.DeletBtn.IdleLineColor = System.Drawing.Color.Red;
-            this.DeletBtn.Location = new System.Drawing.Point(1170, 207);
+            this.DeletBtn.Location = new System.Drawing.Point(1145, 182);
             this.DeletBtn.Margin = new System.Windows.Forms.Padding(5);
             this.DeletBtn.Name = "DeletBtn";
             this.DeletBtn.Size = new System.Drawing.Size(212, 52);
@@ -1050,6 +757,321 @@
             this.bunifuSnackbar1.WarningOptions.IconLeftMargin = 12;
             this.bunifuSnackbar1.ZoomCloseIcon = true;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(1613, 90);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(69, 13);
+            this.label14.TabIndex = 13;
+            this.label14.Text = "Version:1.0.0";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(1561, 77);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(121, 13);
+            this.label13.TabIndex = 12;
+            this.label13.Text = "WertyLand Produciones";
+            // 
+            // bunifuPictureBox12
+            // 
+            this.bunifuPictureBox12.AllowFocused = false;
+            this.bunifuPictureBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox12.AutoSizeHeight = true;
+            this.bunifuPictureBox12.BorderRadius = 0;
+            this.bunifuPictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox12.Image")));
+            this.bunifuPictureBox12.IsCircle = true;
+            this.bunifuPictureBox12.Location = new System.Drawing.Point(22, 663);
+            this.bunifuPictureBox12.Name = "bunifuPictureBox12";
+            this.bunifuPictureBox12.Size = new System.Drawing.Size(52, 52);
+            this.bunifuPictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox12.TabIndex = 90;
+            this.bunifuPictureBox12.TabStop = false;
+            this.bunifuPictureBox12.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(91, 674);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(102, 37);
+            this.label12.TabIndex = 89;
+            this.label12.Text = "Logout";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(82, 589);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(152, 37);
+            this.label11.TabIndex = 88;
+            this.label11.Text = "Estadisticas";
+            // 
+            // bunifuPictureBox11
+            // 
+            this.bunifuPictureBox11.AllowFocused = false;
+            this.bunifuPictureBox11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox11.AutoSizeHeight = true;
+            this.bunifuPictureBox11.BorderRadius = 0;
+            this.bunifuPictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox11.Image")));
+            this.bunifuPictureBox11.IsCircle = true;
+            this.bunifuPictureBox11.Location = new System.Drawing.Point(24, 589);
+            this.bunifuPictureBox11.Name = "bunifuPictureBox11";
+            this.bunifuPictureBox11.Size = new System.Drawing.Size(52, 52);
+            this.bunifuPictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox11.TabIndex = 87;
+            this.bunifuPictureBox11.TabStop = false;
+            this.bunifuPictureBox11.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(82, 537);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(142, 37);
+            this.label10.TabIndex = 86;
+            this.label10.Text = "Transporte";
+            // 
+            // bunifuPictureBox10
+            // 
+            this.bunifuPictureBox10.AllowFocused = false;
+            this.bunifuPictureBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox10.AutoSizeHeight = true;
+            this.bunifuPictureBox10.BorderRadius = 0;
+            this.bunifuPictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox10.Image")));
+            this.bunifuPictureBox10.IsCircle = true;
+            this.bunifuPictureBox10.Location = new System.Drawing.Point(24, 522);
+            this.bunifuPictureBox10.Name = "bunifuPictureBox10";
+            this.bunifuPictureBox10.Size = new System.Drawing.Size(52, 52);
+            this.bunifuPictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox10.TabIndex = 85;
+            this.bunifuPictureBox10.TabStop = false;
+            this.bunifuPictureBox10.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(82, 475);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(95, 37);
+            this.label9.TabIndex = 84;
+            this.label9.Text = "Ventas";
+            // 
+            // bunifuPictureBox9
+            // 
+            this.bunifuPictureBox9.AllowFocused = false;
+            this.bunifuPictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox9.AutoSizeHeight = true;
+            this.bunifuPictureBox9.BorderRadius = 0;
+            this.bunifuPictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox9.Image")));
+            this.bunifuPictureBox9.IsCircle = true;
+            this.bunifuPictureBox9.Location = new System.Drawing.Point(22, 460);
+            this.bunifuPictureBox9.Name = "bunifuPictureBox9";
+            this.bunifuPictureBox9.Size = new System.Drawing.Size(52, 52);
+            this.bunifuPictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox9.TabIndex = 83;
+            this.bunifuPictureBox9.TabStop = false;
+            this.bunifuPictureBox9.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(80, 414);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(111, 37);
+            this.label8.TabIndex = 82;
+            this.label8.Text = "Pedidos";
+            // 
+            // bunifuPictureBox8
+            // 
+            this.bunifuPictureBox8.AllowFocused = false;
+            this.bunifuPictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox8.AutoSizeHeight = true;
+            this.bunifuPictureBox8.BorderRadius = 0;
+            this.bunifuPictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox8.Image")));
+            this.bunifuPictureBox8.IsCircle = true;
+            this.bunifuPictureBox8.Location = new System.Drawing.Point(22, 399);
+            this.bunifuPictureBox8.Name = "bunifuPictureBox8";
+            this.bunifuPictureBox8.Size = new System.Drawing.Size(52, 52);
+            this.bunifuPictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox8.TabIndex = 81;
+            this.bunifuPictureBox8.TabStop = false;
+            this.bunifuPictureBox8.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(80, 353);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(113, 37);
+            this.label7.TabIndex = 80;
+            this.label7.Text = "Facturas";
+            // 
+            // bunifuPictureBox7
+            // 
+            this.bunifuPictureBox7.AllowFocused = false;
+            this.bunifuPictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox7.AutoSizeHeight = true;
+            this.bunifuPictureBox7.BorderRadius = 0;
+            this.bunifuPictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox7.Image")));
+            this.bunifuPictureBox7.IsCircle = true;
+            this.bunifuPictureBox7.Location = new System.Drawing.Point(22, 328);
+            this.bunifuPictureBox7.Name = "bunifuPictureBox7";
+            this.bunifuPictureBox7.Size = new System.Drawing.Size(52, 52);
+            this.bunifuPictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox7.TabIndex = 79;
+            this.bunifuPictureBox7.TabStop = false;
+            this.bunifuPictureBox7.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(89, 285);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(80, 37);
+            this.label6.TabIndex = 78;
+            this.label6.Text = "Stock";
+            // 
+            // bunifuPictureBox6
+            // 
+            this.bunifuPictureBox6.AllowFocused = false;
+            this.bunifuPictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox6.AutoSizeHeight = true;
+            this.bunifuPictureBox6.BorderRadius = 0;
+            this.bunifuPictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox6.Image")));
+            this.bunifuPictureBox6.IsCircle = true;
+            this.bunifuPictureBox6.Location = new System.Drawing.Point(22, 270);
+            this.bunifuPictureBox6.Name = "bunifuPictureBox6";
+            this.bunifuPictureBox6.Size = new System.Drawing.Size(52, 52);
+            this.bunifuPictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox6.TabIndex = 77;
+            this.bunifuPictureBox6.TabStop = false;
+            this.bunifuPictureBox6.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(82, 215);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(150, 37);
+            this.label5.TabIndex = 76;
+            this.label5.Text = "Provedores";
+            // 
+            // bunifuPictureBox5
+            // 
+            this.bunifuPictureBox5.AllowFocused = false;
+            this.bunifuPictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox5.AutoSizeHeight = true;
+            this.bunifuPictureBox5.BorderRadius = 0;
+            this.bunifuPictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox5.Image")));
+            this.bunifuPictureBox5.IsCircle = true;
+            this.bunifuPictureBox5.Location = new System.Drawing.Point(22, 200);
+            this.bunifuPictureBox5.Name = "bunifuPictureBox5";
+            this.bunifuPictureBox5.Size = new System.Drawing.Size(52, 52);
+            this.bunifuPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox5.TabIndex = 75;
+            this.bunifuPictureBox5.TabStop = false;
+            this.bunifuPictureBox5.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(82, 148);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(148, 37);
+            this.label4.TabIndex = 74;
+            this.label4.Text = "Empleados";
+            // 
+            // bunifuPictureBox4
+            // 
+            this.bunifuPictureBox4.AllowFocused = false;
+            this.bunifuPictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox4.AutoSizeHeight = true;
+            this.bunifuPictureBox4.BorderRadius = 0;
+            this.bunifuPictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox4.Image")));
+            this.bunifuPictureBox4.IsCircle = true;
+            this.bunifuPictureBox4.Location = new System.Drawing.Point(22, 133);
+            this.bunifuPictureBox4.Name = "bunifuPictureBox4";
+            this.bunifuPictureBox4.Size = new System.Drawing.Size(52, 52);
+            this.bunifuPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox4.TabIndex = 73;
+            this.bunifuPictureBox4.TabStop = false;
+            this.bunifuPictureBox4.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(82, 90);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(144, 37);
+            this.label3.TabIndex = 72;
+            this.label3.Text = "Categorias";
+            // 
+            // bunifuPictureBox3
+            // 
+            this.bunifuPictureBox3.AllowFocused = false;
+            this.bunifuPictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox3.AutoSizeHeight = true;
+            this.bunifuPictureBox3.BorderRadius = 0;
+            this.bunifuPictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox3.Image")));
+            this.bunifuPictureBox3.IsCircle = true;
+            this.bunifuPictureBox3.Location = new System.Drawing.Point(22, 75);
+            this.bunifuPictureBox3.Name = "bunifuPictureBox3";
+            this.bunifuPictureBox3.Size = new System.Drawing.Size(52, 52);
+            this.bunifuPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox3.TabIndex = 71;
+            this.bunifuPictureBox3.TabStop = false;
+            this.bunifuPictureBox3.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(91, 23);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 37);
+            this.label2.TabIndex = 69;
+            this.label2.Text = "Home";
+            // 
+            // bunifuPictureBox2
+            // 
+            this.bunifuPictureBox2.AllowFocused = false;
+            this.bunifuPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox2.AutoSizeHeight = true;
+            this.bunifuPictureBox2.BorderRadius = 0;
+            this.bunifuPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox2.Image")));
+            this.bunifuPictureBox2.IsCircle = true;
+            this.bunifuPictureBox2.Location = new System.Drawing.Point(22, 18);
+            this.bunifuPictureBox2.Name = "bunifuPictureBox2";
+            this.bunifuPictureBox2.Size = new System.Drawing.Size(42, 42);
+            this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox2.TabIndex = 70;
+            this.bunifuPictureBox2.TabStop = false;
+            this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            // 
             // Stocks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1072,11 +1094,13 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Stocks";
             this.Text = "Stocks";
+            this.Load += new System.EventHandler(this.Stocks_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductDGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox10)).EndInit();
@@ -1088,7 +1112,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProductDGV)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1111,6 +1134,8 @@
         private Bunifu.Framework.UI.BunifuThinButton2 EditBtn;
         private Bunifu.Framework.UI.BunifuThinButton2 DeletBtn;
         private Bunifu.UI.WinForms.BunifuSnackbar bunifuSnackbar1;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox12;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;

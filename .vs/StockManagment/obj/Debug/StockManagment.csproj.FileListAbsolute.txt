@@ -50,3 +50,7 @@ C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\StockManagment\obj\Debug\Sto
 C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\StockManagment\obj\Debug\StockManagment.Stocks.resources
 C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\StockManagment\obj\Debug\StockManagment.Splash.resources
 C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\StockManagment\obj\Debug\StockManagment.Direccion.resources
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\StockManagment\obj\Debug\StockManagment.Categoria.resources
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\StockManagment\obj\Debug\StockManagment.Empleados.resources
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\StockManagment\obj\Debug\StockManagment.Provedores.resources
+C:\Users\Werty\OneDrive\Escritorio\controlStock\.vs\StockManagment\obj\Debug\StockManagment.Facturas.resources
